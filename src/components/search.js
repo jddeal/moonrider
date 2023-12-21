@@ -104,7 +104,7 @@ AFRAME.registerComponent('search', {
         } else {
           delete this.queryObject.filters
         } */
-    let url = `https://beatsaver.com/api/search/text/CURRENT_PAGE_INDEX?sortOrder=Rating&automapper=true&q=${encodeURIComponent(query)}`;
+    let url = `https://beatsaver.com/api/search/text/CURRENT_PAGE_INDEX?sortOrder=Relevance&automapper=true&q=${encodeURIComponent(query)}`;
 
     if (this.data.playlist) {
       url = `https://api.beatsaver.com/playlists/id/${this.data.playlist}/CURRENT_PAGE_INDEX`;
